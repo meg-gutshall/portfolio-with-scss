@@ -39,16 +39,21 @@ plugins:
   - jekyll-paginate
 
 # Exclude from processing.
-# The following items will not be processed, by default. Create a custom list to override the default setting.
+# The following items will not be processed, by default. Add to the includes list to forcibly “process” directories or files that have been excluded.
+# default excludes
 # exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# - .sass-cache/
+# - .jekyll-cache/
+# - gemfiles/
+# - Gemfile
+# - Gemfile.lock
+# - node_modules/
+# - vendor/bundle/
+# - vendor/cache/
+# - vendor/gems/
+# - vendor/ruby/
 
-# needed for travis-ci build
-exclude: [vendor]
-# exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+# excludes needed for travis-ci build
+# - less
+# - Gruntfile.js
+# - package.json
