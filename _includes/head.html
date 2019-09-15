@@ -9,11 +9,11 @@
   <!-- Custom metadata -->
   <meta name="format-detection" content="telephone=no"> <!-- Prevent iOS from telephone number auto-detect for all numbers -->
 
-  {% if page.title %}
+  {%- if page.title -%}
     <title>{{ page.title }} – {{ site.title }}</title>
-  {% else %}
+  {%- else -%}
     <title>{{ site.title }}</title>
-  {% endif %}
+  {%- endif -%}
 
   <!-- Custom styling -->
   <link rel="stylesheet" href="{{ "/assets/css/main.scss" | relative_url }}">
@@ -29,8 +29,13 @@
   <script src="{{ "/assets/javascript/font-awesome/js/all.js" | relative_url }}"></script>
 
   <!-- Add SEO here -->
-  {%- seo -%}
-
+  <!-- include "seo" tag -->
+ 
   <!-- Add feed metadata here -->
   {%- feed_meta -%}
+
+  <!-- Google Analytics -->
+  {%- if site.google_analytics -%}
+    {%- include analytics.html -%}
+  {%- endif -%}
 </head>
