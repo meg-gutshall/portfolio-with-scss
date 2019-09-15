@@ -1,7 +1,6 @@
 // Variables
-//
-// Variables should follow the `$component-state-property-size` formula for
-// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+// Variables should follow the `$component-state-property-size` formula for consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
 
 // Color system
 
@@ -103,7 +102,7 @@ $yiq-text-light:            $white !default;
 
 
 // Options
-//
+
 // Quickly modify global styling by enabling or disabling optional features.
 
 $enable-caret:                                true !default;
@@ -122,10 +121,8 @@ $enable-deprecation-messages:                 true !default;
 
 
 // Spacing
-//
-// Control the default styling of most Bootstrap elements by modifying these
-// variables. Mostly focused on spacing.
-// You can add more entries to the $spacers map, should you need more variation.
+
+// Control the default styling of most Bootstrap elements by modifying these variables. Mostly focused on spacing. You can add more entries to the $spacers map, should you need more variation.
 
 $spacer: 1rem !default;
 $spacers: () !default;
@@ -158,7 +155,7 @@ $sizes: map-merge(
 
 
 // Body
-//
+
 // Settings for the `<body>` element.
 
 $body-bg:                   $white !default;
@@ -166,7 +163,7 @@ $body-color:                $gray-900 !default;
 
 
 // Links
-//
+
 // Style anchor elements.
 
 $link-color:                              theme-color("primary") !default;
@@ -177,16 +174,15 @@ $link-hover-decoration:                   underline !default;
 $emphasized-link-hover-darken-percentage: 15% !default;
 
 // Paragraphs
-//
+
 // Style p element.
 
 $paragraph-margin-bottom:   1rem !default;
 
 
 // Grid breakpoints
-//
-// Define the minimum dimensions at which your layout will change,
-// adapting to different screen sizes, for use in media queries.
+
+// Define the minimum dimensions at which your layout will change, adapting to different screen sizes, for use in media queries.
 
 $grid-breakpoints: (
   xs: 0,
@@ -201,7 +197,7 @@ $grid-breakpoints: (
 
 
 // Grid containers
-//
+
 // Define the maximum width of `.container` for different screen sizes.
 
 $container-max-widths: (
@@ -215,7 +211,7 @@ $container-max-widths: (
 
 
 // Grid columns
-//
+
 // Set the number of columns and specify the width of the gutters.
 
 $grid-columns:                12 !default;
@@ -223,7 +219,7 @@ $grid-gutter-width:           30px !default;
 
 
 // Components
-//
+
 // Define common padding and border radius sizes and more.
 
 $line-height-lg:              1.5 !default;
@@ -266,7 +262,7 @@ $embed-responsive-aspect-ratios: join(
 );
 
 // Typography
-//
+
 // Font, line-height, and color for body text, headings, and more.
 
 // stylelint-disable value-keyword-case
@@ -341,7 +337,7 @@ $hr-margin-y:                 $spacer !default;
 
 
 // Tables
-//
+
 // Customizes the `.table` component with basic values, each used across all table variations.
 
 $table-cell-padding:          .75rem !default;
@@ -377,7 +373,7 @@ $table-border-level:          -6 !default;
 
 
 // Buttons + Forms
-//
+
 // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
 
 $input-btn-padding-y:         .375rem !default;
@@ -404,7 +400,7 @@ $input-btn-border-width:      $border-width !default;
 
 
 // Buttons
-//
+
 // For each of Bootstrap's buttons, define text, background, and border color.
 
 $btn-padding-y:               $input-btn-padding-y !default;
@@ -671,9 +667,8 @@ $form-validation-states: map-merge(
 );
 
 // Z-index master list
-//
-// Warning: Avoid customizing these values. They're used for a bird's eye view
-// of components dependent on the z-axis and are designed to all work together.
+
+// Warning: Avoid customizing these values. They're used for a bird's eye view of components dependent on the z-axis and are designed to all work together.
 
 $zindex-dropdown:                   1000 !default;
 $zindex-sticky:                     1020 !default;
@@ -745,7 +740,7 @@ $navbar-dark-brand-hover-color:           $navbar-dark-active-color !default;
 
 
 // Dropdowns
-//
+
 // Dropdown menu container and contents.
 
 $dropdown-min-width:                10rem !default;
@@ -919,8 +914,7 @@ $badge-transition:                  $btn-transition !default;
 $badge-focus-width:                 $input-btn-focus-width !default;
 
 $badge-pill-padding-x:              .6em !default;
-// Use a higher than normal value to ensure completely rounded edges when
-// customizing padding or font-size on labels.
+// Use a higher than normal value to ensure completely rounded edges when customizing padding or font-size on labels.
 $badge-pill-border-radius:          10rem !default;
 
 
@@ -963,7 +957,7 @@ $modal-transition:                  transform .3s ease-out !default;
 
 
 // Alerts
-//
+
 // Define alert colors, border radius, and padding.
 
 $alert-padding-y:                   .75rem !default;

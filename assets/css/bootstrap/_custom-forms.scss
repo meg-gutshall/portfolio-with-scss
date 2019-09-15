@@ -4,7 +4,7 @@
 
 
 // Checkboxes and radios
-//
+
 // Base class takes care of all the key behavioral aspects.
 
 .custom-control {
@@ -63,7 +63,7 @@
 }
 
 // Custom control indicators
-//
+
 // Build the custom controls out of pseudo-elements.
 
 .custom-control-label {
@@ -101,7 +101,7 @@
 
 
 // Checkboxes
-//
+
 // Tweak just a few things for checkboxes.
 
 .custom-checkbox {
@@ -137,7 +137,7 @@
 }
 
 // Radios
-//
+
 // Tweak just a few things for radios.
 
 .custom-radio {
@@ -160,8 +160,8 @@
 }
 
 
-// switches
-//
+// Switches
+
 // Tweak a few things for switches
 
 .custom-switch {
@@ -204,10 +204,8 @@
 
 
 // Select
-//
-// Replaces the browser default select with a custom one, mostly pulled from
-// https://primer.github.io/.
-//
+
+// Replaces the browser default select with a custom one, mostly pulled from https://primer.github.io/.
 
 .custom-select {
   display: inline-block;
@@ -237,10 +235,7 @@
     }
 
     &::-ms-value {
-      // For visual consistency with other platforms/browsers,
-      // suppress the default white text on blue background highlight given to
-      // the selected option text when the (still closed) <select> receives focus
-      // in IE and (under certain conditions) Edge.
+      // For visual consistency with other platforms/browsers, suppress the default white text on blue background highlight given to the selected option text when the (still closed) <select> receives focus in IE and (under certain conditions) Edge.
       // See https://github.com/twbs/bootstrap/issues/19398.
       color: $input-color;
       background-color: $input-bg;
@@ -283,7 +278,7 @@
 
 
 // File
-//
+
 // Custom file input.
 
 .custom-file {
@@ -358,10 +353,8 @@
 }
 
 // Range
-//
-// Style range inputs the same across browsers. Vendor-specific rules for pseudo
-// elements cannot be mixed. As such, there are no shared styles for focus or
-// active states on prefixed selectors.
+
+// Style range inputs the same across browsers. Vendor-specific rules for pseudo elements cannot be mixed. As such, there are no shared styles for focus or active states on prefixed selectors.
 
 .custom-range {
   width: 100%;
@@ -373,8 +366,7 @@
   &:focus {
     outline: none;
 
-    // Pseudo-elements must be split across multiple rulesets to have an effect.
-    // No box-shadow() mixin for focus accessibility.
+    // Pseudo-elements must be split across multiple rulesets to have an effect. No box-shadow() mixin for focus accessibility.
     &::-webkit-slider-thumb { box-shadow: $custom-range-thumb-focus-box-shadow; }
     &::-moz-range-thumb     { box-shadow: $custom-range-thumb-focus-box-shadow; }
     &::-ms-thumb            { box-shadow: $custom-range-thumb-focus-box-shadow; }

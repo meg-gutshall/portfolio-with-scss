@@ -1,5 +1,5 @@
 // Base class
-//
+
 // Easily usable on <ul>, <ol>, or <div>.
 
 .list-group {
@@ -13,9 +13,8 @@
 
 
 // Interactive list items
-//
-// Use anchor or button elements instead of `li`s or `div`s to create interactive
-// list items. Includes an extra `.active` modifier class for selected items.
+
+// Use anchor or button elements instead of `li`s or `div`s to create interactive list items. Includes an extra `.active` modifier class for selected items.
 
 .list-group-item-action {
   width: 100%; // For `<button>`s (anchors become 100% by default though)
@@ -38,7 +37,7 @@
 
 
 // Individual list items
-//
+
 // Use on `li`s or `div`s within the `.list-group` parent.
 
 .list-group-item {
@@ -78,7 +77,7 @@
 
 
 // Horizontal
-//
+
 // Change the layout of list group items from vertical (default) to horizontal.
 
 @each $breakpoint in map-keys($grid-breakpoints) {
@@ -109,9 +108,8 @@
 
 
 // Flush list items
-//
-// Remove borders and border-radius to keep list group items edge-to-edge. Most
-// useful within other components (e.g., cards).
+
+// Remove borders and border-radius to keep list group items edge-to-edge. Most useful within other components (e.g., cards).
 
 .list-group-flush {
   .list-group-item {
@@ -140,9 +138,8 @@
 
 
 // Contextual variants
-//
-// Add modifier classes to change text and background color on individual items.
-// Organizationally, this must come after the `:hover` states.
+
+// Add modifier classes to change text and background color on individual items. Organizationally, this must come after the `:hover` states.
 
 @each $color, $value in $theme-colors {
   @include list-group-item-variant($color, theme-color-level($color, -9), theme-color-level($color, 6));

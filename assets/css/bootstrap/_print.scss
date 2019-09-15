@@ -14,9 +14,9 @@
     *::before,
     *::after {
       // Bootstrap specific; comment out `color` and `background`
-      //color: $black !important; // Black prints faster
+      // color: $black !important; // Black prints faster
       text-shadow: none !important;
-      //background: transparent !important;
+      // background: transparent !important;
       box-shadow: none !important;
     }
 
@@ -27,24 +27,22 @@
     }
 
     // Bootstrap specific; comment the following selector out
-    //a[href]::after {
-    //  content: " (" attr(href) ")";
-    //}
+    // a[href]::after {
+    //   content: " (" attr(href) ")";
+    // }
 
     abbr[title]::after {
       content: " (" attr(title) ")";
     }
 
     // Bootstrap specific; comment the following selector out
-    //
-    // Don't show links that are fragment identifiers,
-    // or use the `javascript:` pseudo protocol
-    //
 
-    //a[href^="#"]::after,
-    //a[href^="javascript:"]::after {
-    // content: "";
-    //}
+    // Don't show links that are fragment identifiers, or use the `javascript:` pseudo protocol
+
+    // a[href^="#"]::after,
+    // a[href^="javascript:"]::after {
+    //  content: "";
+    // }
 
     pre {
       white-space: pre-wrap !important;
@@ -55,10 +53,7 @@
       page-break-inside: avoid;
     }
 
-    //
-    // Printing Tables:
-    // http://css-discuss.incutio.com/wiki/Printing_Tables
-    //
+    // Printing Tables: http://css-discuss.incutio.com/wiki/Printing_Tables
 
     thead {
       display: table-header-group;
@@ -83,9 +78,8 @@
 
     // Bootstrap specific changes start
 
-    // Specify a size and min-width to make printing closer across browsers.
-    // We don't set margin here because it breaks `size` in Chrome. We also
-    // don't use `!important` on `size` as it breaks in Chrome.
+    // Specify a size and min-width to make printing closer across browsers. We don't set margin here because it breaks `size` in Chrome. We also don't use `!important` on `size` as it breaks in Chrome.
+
     @page {
       size: $print-page-size;
     }
@@ -97,6 +91,7 @@
     }
 
     // Bootstrap components
+    
     .navbar {
       display: none;
     }
