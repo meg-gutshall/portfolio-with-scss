@@ -2,21 +2,35 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="{{ site.author }}" />
+  <meta name="author" content="{{ site.author }}">
   <meta name="description" content="{{ site.description }}">
   <link rel="favicon" href="/static/images/favicon.ico">
 
   <!-- Custom metadata -->
+  <meta name="format-detection" content="telephone=no"> <!-- Prevent iOS from telephone number auto-detect for all numbers -->
+
   {% if page.title %}
     <title>{{ page.title }} – {{ site.title }}</title>
   {% else %}
     <title>{{ site.title }}</title>
   {% endif %}
 
-  <!-- Custom styles for this template -->
-  <link rel="stylesheet" href="/assets/main.scss" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+  <!-- Custom styling -->
+  <link rel="stylesheet" href="{{ "/assets/css/main.scss" | relative_url }}">
+  
+  <!-- FontAwesome styling -->
+  <link rel="stylesheet" href="{{ "/assets/css/font-awesome/css/all.css" | relative_url }}">
+  
+  <!-- Bootstrap JavaScript -->
+  <script src="{{ "/assets/javascript/bootstrap/jquery.min.js" | relative_url }}"></script>
+  <script src="{{ "/assets/javascript/bootstrap/bootstrap.bundle.min.js" | relative_url }}"></script>
+
+  <!-- FontAwesome JavaScript -->
+  <script src="{{ "/assets/javascript/font-awesome/js/all.js" | relative_url }}"></script>
 
   <!-- Add SEO here -->
   {%- seo -%}
+
+  <!-- Add feed metadata here -->
+  {%- feed_meta -%}
 </head>
