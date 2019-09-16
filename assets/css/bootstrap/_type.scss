@@ -1,7 +1,8 @@
 // stylelint-disable declaration-no-important, selector-list-comma-newline-after
 
-// Headings
+// Typography
 
+// Headings
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: $headings-margin-bottom;
@@ -47,7 +48,6 @@ h6, .h6 { @include font-size($h6-font-size); }
 
 
 // Horizontal rules
-
 hr {
   margin-top: $hr-margin-y;
   margin-bottom: $hr-margin-y;
@@ -57,7 +57,6 @@ hr {
 
 
 // Emphasis
-
 small,
 .small {
   @include font-size($small-font-size);
@@ -70,9 +69,7 @@ mark,
   background-color: $mark-bg;
 }
 
-
 // Lists
-
 .list-unstyled {
   @include list-unstyled;
 }
@@ -88,7 +85,6 @@ mark,
     margin-right: $list-inline-padding;
   }
 }
-
 
 // Misc
 

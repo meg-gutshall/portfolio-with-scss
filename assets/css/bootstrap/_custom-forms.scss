@@ -1,12 +1,8 @@
-// Embedded icons from Open Iconic.
-// Released under MIT and copyright 2014 Waybury.
-// https://useiconic.com/open
+// Custom Form
 
+// Checkboxes and Radios
 
-// Checkboxes and radios
-
-// Base class takes care of all the key behavioral aspects.
-
+// Base class takes care of all the key behavioral aspects
 .custom-control {
   position: relative;
   display: block;
@@ -62,10 +58,7 @@
   }
 }
 
-// Custom control indicators
-
-// Build the custom controls out of pseudo-elements.
-
+// Build the custom controls out of pseudo-elements
 .custom-control-label {
   position: relative;
   margin-bottom: 0;
@@ -101,9 +94,6 @@
 
 
 // Checkboxes
-
-// Tweak just a few things for checkboxes.
-
 .custom-checkbox {
   .custom-control-label::before {
     @include border-radius($custom-checkbox-indicator-border-radius);
@@ -137,9 +127,6 @@
 }
 
 // Radios
-
-// Tweak just a few things for radios.
-
 .custom-radio {
   .custom-control-label::before {
     // stylelint-disable-next-line property-blacklist
@@ -159,11 +146,7 @@
   }
 }
 
-
 // Switches
-
-// Tweak a few things for switches
-
 .custom-switch {
   padding-left: $custom-switch-width + $custom-control-gutter;
 
@@ -202,11 +185,9 @@
   }
 }
 
-
 // Select
 
-// Replaces the browser default select with a custom one, mostly pulled from https://primer.github.io/.
-
+// Replaces the browser default select with a custom one, mostly pulled from https://primer.github.io/
 .custom-select {
   display: inline-block;
   width: 100%;
@@ -235,7 +216,7 @@
     }
 
     &::-ms-value {
-      // For visual consistency with other platforms/browsers, suppress the default white text on blue background highlight given to the selected option text when the (still closed) <select> receives focus in IE and (under certain conditions) Edge.
+      // For visual consistency with other platforms/browsers, suppress the default white text on blue background highlight given to the selected option text when the (still closed) `<select>` receives focus in IE and (under certain conditions) Edge.
       // See https://github.com/twbs/bootstrap/issues/19398.
       color: $input-color;
       background-color: $input-bg;
@@ -276,11 +257,9 @@
   @include font-size($custom-select-font-size-lg);
 }
 
-
 // File
 
-// Custom file input.
-
+// Custom file input
 .custom-file {
   position: relative;
   display: inline-block;
@@ -355,7 +334,6 @@
 // Range
 
 // Style range inputs the same across browsers. Vendor-specific rules for pseudo elements cannot be mixed. As such, there are no shared styles for focus or active states on prefixed selectors.
-
 .custom-range {
   width: 100%;
   height: calc(#{$custom-range-thumb-height} + #{$custom-range-thumb-focus-box-shadow-width * 2});
@@ -433,8 +411,8 @@
     width: $custom-range-thumb-width;
     height: $custom-range-thumb-height;
     margin-top: 0; // Edge specific
-    margin-right: $custom-range-thumb-focus-box-shadow-width; // Workaround that overflowed box-shadow is hidden.
-    margin-left: $custom-range-thumb-focus-box-shadow-width;  // Workaround that overflowed box-shadow is hidden.
+    margin-right: $custom-range-thumb-focus-box-shadow-width; // Workaround that overflowed `box-shadow` is hidden
+    margin-left: $custom-range-thumb-focus-box-shadow-width;  // Workaround that overflowed `box-shadow` is hidden
     @include gradient-bg($custom-range-thumb-bg);
     border: $custom-range-thumb-border;
     @include border-radius($custom-range-thumb-border-radius);
@@ -497,3 +475,7 @@
 .custom-select {
   @include transition($custom-forms-transition);
 }
+
+// Embedded icons from Open Iconic.
+// Released under MIT and copyright 2014 Waybury.
+// https://useiconic.com/open

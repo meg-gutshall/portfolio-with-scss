@@ -1,8 +1,9 @@
 // Variables
 
-// Variables should follow the `$component-state-property-size` formula for consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+// Variables should follow the `$component-state-property-size` formula for consistent naming
+// Ex: `$nav-link-disabled-color` and `$modal-content-box-shadow-xs`
 
-// Color system
+// Color System
 
 $white:    #fff !default;
 $gray-100: #f8f9fa !default;
@@ -96,14 +97,14 @@ $theme-color-interval:      8% !default;
 // The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
 $yiq-contrasted-threshold:  150 !default;
 
-// Customize the light and dark text colors for use in our YIQ color contrast function.
+// Customize the light and dark text colors for use in our YIQ color contrast function
 $yiq-text-dark:             $gray-900 !default;
 $yiq-text-light:            $white !default;
 
 
 // Options
 
-// Quickly modify global styling by enabling or disabling optional features.
+// Quickly modify global styling by enabling or disabling optional features
 
 $enable-caret:                                true !default;
 $enable-rounded:                              true !default;
@@ -122,7 +123,7 @@ $enable-deprecation-messages:                 true !default;
 
 // Spacing
 
-// Control the default styling of most Bootstrap elements by modifying these variables. Mostly focused on spacing. You can add more entries to the $spacers map, should you need more variation.
+// Control the default styling of most Bootstrap elements by modifying these variables. Mostly focused on spacing. You can add more entries to the `$spacers` map, should you need more variation.
 
 $spacer: 1rem !default;
 $spacers: () !default;
@@ -139,7 +140,7 @@ $spacers: map-merge(
   $spacers
 );
 
-// This variable affects the `.h-*` and `.w-*` classes.
+// This variable affects the `.h-*` and `.w-*` classes
 $sizes: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $sizes: map-merge(
@@ -156,7 +157,7 @@ $sizes: map-merge(
 
 // Body
 
-// Settings for the `<body>` element.
+// Settings for the `<body>` element
 
 $body-bg:                   $white !default;
 $body-color:                $gray-900 !default;
@@ -164,7 +165,7 @@ $body-color:                $gray-900 !default;
 
 // Links
 
-// Style anchor elements.
+// Style anchor elements
 
 $link-color:                              theme-color("primary") !default;
 $link-decoration:                         none !default;
@@ -175,14 +176,14 @@ $emphasized-link-hover-darken-percentage: 15% !default;
 
 // Paragraphs
 
-// Style p element.
+// Style `p` element
 
 $paragraph-margin-bottom:   1rem !default;
 
 
-// Grid breakpoints
+// Grid Breakpoints
 
-// Define the minimum dimensions at which your layout will change, adapting to different screen sizes, for use in media queries.
+// Define the minimum dimensions at which your layout will change, adapting to different screen sizes, for use in media queries
 
 $grid-breakpoints: (
   xs: 0,
@@ -196,9 +197,9 @@ $grid-breakpoints: (
 @include _assert-starts-at-zero($grid-breakpoints, "$grid-breakpoints");
 
 
-// Grid containers
+// Grid Containers
 
-// Define the maximum width of `.container` for different screen sizes.
+// Define the maximum width of `.container` for different screen sizes
 
 $container-max-widths: (
   sm: 540px,
@@ -210,9 +211,9 @@ $container-max-widths: (
 @include _assert-ascending($container-max-widths, "$container-max-widths");
 
 
-// Grid columns
+// Grid Columns
 
-// Set the number of columns and specify the width of the gutters.
+// Set the number of columns and specify the width of the gutters
 
 $grid-columns:                12 !default;
 $grid-gutter-width:           30px !default;
@@ -220,7 +221,7 @@ $grid-gutter-width:           30px !default;
 
 // Components
 
-// Define common padding and border radius sizes and more.
+// Define common padding and border radius sizes and more
 
 $line-height-lg:              1.5 !default;
 $line-height-sm:              1.5 !default;
@@ -263,7 +264,7 @@ $embed-responsive-aspect-ratios: join(
 
 // Typography
 
-// Font, line-height, and color for body text, headings, and more.
+// `font`, `line-height`, and `color` for body text, headings, and more
 
 // stylelint-disable value-keyword-case
 $font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
@@ -338,7 +339,7 @@ $hr-margin-y:                 $spacer !default;
 
 // Tables
 
-// Customizes the `.table` component with basic values, each used across all table variations.
+// Customizes the `.table` component with basic values, each used across all table variations
 
 $table-cell-padding:          .75rem !default;
 $table-cell-padding-sm:       .3rem !default;
@@ -374,7 +375,7 @@ $table-border-level:          -6 !default;
 
 // Buttons + Forms
 
-// Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
+// Shared variables that are reassigned to `$input-` and `$btn-` specific variables
 
 $input-btn-padding-y:         .375rem !default;
 $input-btn-padding-x:         .75rem !default;
@@ -401,7 +402,7 @@ $input-btn-border-width:      $border-width !default;
 
 // Buttons
 
-// For each of Bootstrap's buttons, define text, background, and border color.
+// For each of Bootstrap's buttons, define text, background, and border color
 
 $btn-padding-y:               $input-btn-padding-y !default;
 $btn-padding-x:               $input-btn-padding-x !default;
@@ -561,7 +562,7 @@ $custom-select-padding-x:           $input-padding-x !default;
 $custom-select-font-family:         $input-font-family !default;
 $custom-select-font-size:           $input-font-size !default;
 $custom-select-height:              $input-height !default;
-$custom-select-indicator-padding:   1rem !default; // Extra padding to account for the presence of the background-image based indicator
+$custom-select-indicator-padding:   1rem !default; // Extra padding to account for the presence of the `background-image` based indicator
 $custom-select-font-weight:         $input-font-weight !default;
 $custom-select-line-height:         $input-line-height !default;
 $custom-select-color:               $input-color !default;
@@ -638,7 +639,7 @@ $custom-file-text: (
 ) !default;
 
 
-// Form validation
+// Form Validation
 
 $form-feedback-margin-top:          $form-text-margin-top !default;
 $form-feedback-font-size:           $small-font-size !default;
@@ -666,9 +667,9 @@ $form-validation-states: map-merge(
   $form-validation-states
 );
 
-// Z-index master list
+// Z-index Master List
 
-// Warning: Avoid customizing these values. They're used for a bird's eye view of components dependent on the z-axis and are designed to all work together.
+// Warning: Avoid customizing these values. They're used for a bird's eye view of components dependent on the `z-axis` and are designed to all work together.
 
 $zindex-dropdown:                   1000 !default;
 $zindex-sticky:                     1020 !default;
@@ -709,7 +710,7 @@ $navbar-padding-x:                  $spacer !default;
 $navbar-nav-link-padding-x:         .5rem !default;
 
 $navbar-brand-font-size:            $font-size-lg !default;
-// Compute the navbar-brand padding-y so the navbar-brand will have the same height as navbar-text and nav-link
+// Compute the `navbar-brand` `padding-y` so the `navbar-brand` will have the same height as `navbar-text` and `nav-link`
 $nav-link-height:                   $font-size-base * $line-height-base + $nav-link-padding-y * 2 !default;
 $navbar-brand-height:               $navbar-brand-font-size * $line-height-base !default;
 $navbar-brand-padding-y:            ($nav-link-height - $navbar-brand-height) / 2 !default;
@@ -741,7 +742,7 @@ $navbar-dark-brand-hover-color:           $navbar-dark-active-color !default;
 
 // Dropdowns
 
-// Dropdown menu container and contents.
+// Dropdown menu container and contents
 
 $dropdown-min-width:                10rem !default;
 $dropdown-padding-y:                .5rem !default;
@@ -914,7 +915,7 @@ $badge-transition:                  $btn-transition !default;
 $badge-focus-width:                 $input-btn-focus-width !default;
 
 $badge-pill-padding-x:              .6em !default;
-// Use a higher than normal value to ensure completely rounded edges when customizing padding or font-size on labels.
+// Use a higher than normal value to ensure completely rounded edges when customizing `padding` or `font-size` on labels
 $badge-pill-border-radius:          10rem !default;
 
 
@@ -958,7 +959,7 @@ $modal-transition:                  transform .3s ease-out !default;
 
 // Alerts
 
-// Define alert colors, border radius, and padding.
+// Define alert colors, border radius, and padding
 
 $alert-padding-y:                   .75rem !default;
 $alert-padding-x:                   1.25rem !default;
@@ -972,7 +973,7 @@ $alert-border-level:                -9 !default;
 $alert-color-level:                 6 !default;
 
 
-// Progress bars
+// Progress Bars
 
 $progress-height:                   1rem !default;
 $progress-font-size:                $font-size-base * .75 !default;
@@ -985,7 +986,7 @@ $progress-bar-animation-timing:     1s linear infinite !default;
 $progress-bar-transition:           width .6s ease !default;
 
 
-// List group
+// List Group
 
 $list-group-color:                  null !default;
 $list-group-bg:                     $white !default;
@@ -1011,7 +1012,7 @@ $list-group-action-active-color:    $body-color !default;
 $list-group-action-active-bg:       $gray-200 !default;
 
 
-// Image thumbnails
+// Image Thumbnails
 
 $thumbnail-padding:                 .25rem !default;
 $thumbnail-bg:                      $body-bg !default;

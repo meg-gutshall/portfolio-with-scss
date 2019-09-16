@@ -1,8 +1,6 @@
-// Button variants
-//
-// Easily pump out default styles, as well as :hover, :focus, :active,
-// and disabled options for all buttons
+// Button Variant
 
+// Easily pump out default styles, as well as `:hover`, `:focus`, `:active`, and `:disabled` options for all buttons
 @mixin button-variant($background, $border, $hover-background: darken($background, 7.5%), $hover-border: darken($border, 10%), $active-background: darken($background, 10%), $active-border: darken($border, 12.5%)) {
   color: color-yiq($background);
   @include gradient-bg($background);
@@ -25,7 +23,7 @@
     }
   }
 
-  // Disabled comes first so active can properly restyle
+  // `:disabled` comes first so the `:active` state can properly restyle
   &.disabled,
   &:disabled {
     color: color-yiq($background);
@@ -43,12 +41,12 @@
     color: color-yiq($active-background);
     background-color: $active-background;
     @if $enable-gradients {
-      background-image: none; // Remove the gradient for the pressed/active state
+      background-image: none; // Remove the gradient for the `:active` state
     }
     border-color: $active-border;
 
     &:focus {
-      // Avoid using mixin so we can pass custom focus shadow properly
+      // Avoid using mixin so we can pass custom `:focus` shadow properly
       @if $enable-shadows and $btn-active-box-shadow != none {
         box-shadow: $btn-active-box-shadow, 0 0 0 $btn-focus-width rgba(mix(color-yiq($background), $border, 15%), .5);
       } @else {
@@ -87,7 +85,7 @@
     border-color: $active-border;
 
     &:focus {
-      // Avoid using mixin so we can pass custom focus shadow properly
+      // Avoid using mixin so we can pass custom `:focus` shadow properly
       @if $enable-shadows and $btn-active-box-shadow != none {
         box-shadow: $btn-active-box-shadow, 0 0 0 $btn-focus-width rgba($color, .5);
       } @else {

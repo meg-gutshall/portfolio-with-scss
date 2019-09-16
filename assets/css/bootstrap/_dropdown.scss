@@ -1,3 +1,5 @@
+// Dropdown
+
 // The dropdown wrapper (`<div>`)
 .dropup,
 .dropright,
@@ -23,7 +25,7 @@
   float: left;
   min-width: $dropdown-min-width;
   padding: $dropdown-padding-y 0;
-  margin: $dropdown-spacer 0 0; // override default ul
+  margin: $dropdown-spacer 0 0; // override default `ul`
   @include font-size($dropdown-font-size);
   color: $dropdown-color;
   text-align: left; // Ensures proper alignment if parent has it changed (e.g., modal footer)
@@ -51,8 +53,7 @@
   }
 }
 
-// Allow for dropdowns to go bottom up (aka, dropup-menu)
-// Just add .dropup after the standard .dropdown class and you're set.
+// Allow for dropdowns to go bottom up (aka, `dropup-menu`). Just add `.dropup` after the standard `.dropdown` class and you're set.
 .dropup {
   .dropdown-menu {
     top: auto;

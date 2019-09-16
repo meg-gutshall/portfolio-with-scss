@@ -1,4 +1,4 @@
-// Rotating border
+// Spinner
 
 @keyframes spinner-border {
   to { transform: rotate(360deg); }
@@ -22,7 +22,7 @@
   border-width: $spinner-border-width-sm;
 }
 
-// Growing circle
+// Growing Circle
 
 @keyframes spinner-grow {
   0% {

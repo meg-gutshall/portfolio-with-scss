@@ -1,4 +1,7 @@
 // stylelint-disable property-blacklist
+
+// Transition
+
 @mixin transition($transition...) {
   @if $enable-transitions {
     @if length($transition) == 0 {

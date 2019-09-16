@@ -1,8 +1,6 @@
 // stylelint-disable declaration-no-important
 
-//
 // Text
-//
 
 .text-monospace { font-family: $font-family-monospace !important; }
 
@@ -13,7 +11,7 @@
 .text-nowrap   { white-space: nowrap !important; }
 .text-truncate { @include text-truncate; }
 
-// Responsive alignment
+// Responsive Alignment
 
 @each $breakpoint in map-keys($grid-breakpoints) {
   @include media-breakpoint-up($breakpoint) {
@@ -31,7 +29,7 @@
 .text-uppercase  { text-transform: uppercase !important; }
 .text-capitalize { text-transform: capitalize !important; }
 
-// Weight and italics
+// Weight and Italics
 
 .font-weight-light   { font-weight: $font-weight-light !important; }
 .font-weight-lighter { font-weight: $font-weight-lighter !important; }
@@ -40,7 +38,7 @@
 .font-weight-bolder  { font-weight: $font-weight-bolder !important; }
 .font-italic         { font-style: italic !important; }
 
-// Contextual colors
+// Contextual Color
 
 .text-white { color: $white !important; }
 

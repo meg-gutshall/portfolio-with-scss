@@ -1,7 +1,6 @@
-// Base class
+// Badge
 
-// Requires one of the contextual, color modifier classes for `color` and `background-color`.
-
+// Requires one of the contextual, color modifier classes for `color` and `background-color`
 .badge {
   display: inline-block;
   padding: $badge-padding-y $badge-padding-x;
@@ -32,20 +31,18 @@
   top: -1px;
 }
 
-// Pill badges
+// Pill Badge
 
-// Make them extra rounded with a modifier to replace v3's badges.
-
+// Make them extra rounded with a modifier to replace v3 badges
 .badge-pill {
   padding-right: $badge-pill-padding-x;
   padding-left: $badge-pill-padding-x;
   @include border-radius($badge-pill-border-radius);
 }
 
-// Colors
+// Badge Color
 
-// Contextual variations (linked badges get darker on :hover).
-
+// Linked badges get darker on `:hover`
 @each $color, $value in $theme-colors {
   .badge-#{$color} {
     @include badge-variant($value);

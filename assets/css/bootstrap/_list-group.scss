@@ -1,21 +1,18 @@
-// Base class
+// List Group
 
-// Easily usable on <ul>, <ol>, or <div>.
-
+// Easily usable on `<ul>`, `<ol>`, or `<div>`
 .list-group {
   display: flex;
   flex-direction: column;
 
-  // No need to set list-style: none; since .list-group-item is block level
-  padding-left: 0; // reset padding because ul and ol
+  // No need to set `list-style: none` since .`list-group-item` is block level
+  padding-left: 0; // reset padding because `ul` and `ol`
   margin-bottom: 0;
 }
 
+// Interactive List Item
 
-// Interactive list items
-
-// Use anchor or button elements instead of `li`s or `div`s to create interactive list items. Includes an extra `.active` modifier class for selected items.
-
+// Use anchor or button elements instead of `li` or `div` to create interactive list items. Includes an extra `.active` modifier class for selected items.
 .list-group-item-action {
   width: 100%; // For `<button>`s (anchors become 100% by default though)
   color: $list-group-action-color;
@@ -35,11 +32,9 @@
   }
 }
 
+// Individual List Item
 
-// Individual list items
-
-// Use on `li`s or `div`s within the `.list-group` parent.
-
+// Use on `li` or `div` within the `.list-group` parent
 .list-group-item {
   position: relative;
   display: block;
@@ -66,7 +61,7 @@
     background-color: $list-group-disabled-bg;
   }
 
-  // Include both here for `<a>`s and `<button>`s
+  // Include both here for `<a>` and `<button>`
   &.active {
     z-index: 2; // Place active items above their siblings for proper border styling
     color: $list-group-active-color;
@@ -75,11 +70,9 @@
   }
 }
 
-
 // Horizontal
 
-// Change the layout of list group items from vertical (default) to horizontal.
-
+// Change the layout of list group items from vertical (default) to horizontal
 @each $breakpoint in map-keys($grid-breakpoints) {
   @include media-breakpoint-up($breakpoint) {
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
@@ -106,11 +99,9 @@
   }
 }
 
+// Flush List Item
 
-// Flush list items
-
-// Remove borders and border-radius to keep list group items edge-to-edge. Most useful within other components (e.g., cards).
-
+// Remove `border` and `border-radius` to keep list group items edge-to-edge. Most useful within other components (e.g., cards).
 .list-group-flush {
   .list-group-item {
     border-right: 0;
@@ -136,11 +127,9 @@
   }
 }
 
-
-// Contextual variants
+// Contextual Variant
 
 // Add modifier classes to change text and background color on individual items. Organizationally, this must come after the `:hover` states.
-
 @each $color, $value in $theme-colors {
   @include list-group-item-variant($color, theme-color-level($color, -9), theme-color-level($color, 6));
 }

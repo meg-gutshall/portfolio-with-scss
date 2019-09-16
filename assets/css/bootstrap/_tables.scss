@@ -1,10 +1,10 @@
-// Basic Bootstrap table
+// Basic Bootstrap Table
 
 .table {
   width: 100%;
   margin-bottom: $spacer;
   color: $table-color;
-  background-color: $table-bg; // Reset for nesting within parents with `background-color`.
+  background-color: $table-bg; // Reset for nesting within parents with `background-color`
 
   th,
   td {
@@ -25,7 +25,6 @@
 
 
 // Condensed table w/ half padding
-
 .table-sm {
   th,
   td {
@@ -34,10 +33,9 @@
 }
 
 
-// Border versions
+// Border Versions
 
-// Add or remove borders all around the table and between all the columns.
-
+// Add or remove borders all around the table and between all the columns
 .table-bordered {
   border: $table-border-width solid $table-border-color;
 
@@ -66,18 +64,15 @@
 // Zebra-striping
 
 // Default zebra-stripe styles (alternating gray and transparent backgrounds)
-
 .table-striped {
   tbody tr:nth-of-type(#{$table-striped-order}) {
     background-color: $table-accent-bg;
   }
 }
 
-
-// Hover effect
+// Hover Effect
 
 // Placed here since it has to come after the potential zebra striping
-
 .table-hover {
   tbody tr {
     @include hover {
@@ -87,11 +82,9 @@
   }
 }
 
+// Table Background
 
-// Table backgrounds
-
-// Exact selectors below required to override `.table-striped` and prevent inheritance to nested tables.
-
+// Exact selectors below required to override `.table-striped` and prevent inheritance to nested tables
 @each $color, $value in $theme-colors {
   @include table-row-variant($color, theme-color-level($color, $table-bg-level), theme-color-level($color, $table-border-level));
 }
@@ -99,10 +92,9 @@
 @include table-row-variant(active, $table-active-bg);
 
 
-// Dark styles
+// Dark Style
 
-// Same table markup, but inverted color scheme: dark background and light text.
-
+// Same table markup, but inverted color scheme: dark background and light text
 // stylelint-disable-next-line no-duplicate-selectors
 .table {
   .thead-dark {
@@ -152,11 +144,9 @@
   }
 }
 
+// Responsive Table
 
-// Responsive tables
-
-// Generate series of `.table-responsive-*` classes for configuring the screen size of where your table will overflow.
-
+// Generate series of `.table-responsive-*` classes for configuring the screen size of where your table will overflow
 .table-responsive {
   @each $breakpoint in map-keys($grid-breakpoints) {
     $next: breakpoint-next($breakpoint, $grid-breakpoints);

@@ -1,9 +1,8 @@
-// Bootstrap functions
+// Bootstrap Functions
 
-// Utility mixins and functions for evaluating source code across our variables, maps, and mixins.
+// Utility mixins and functions for evaluating source code across our variables, maps, and mixins
 
-// Ascending
-// Used to evaluate Sass maps like our grid breakpoints.
+// "Ascending" is used to evaluate Sass maps like our grid breakpoints
 @mixin _assert-ascending($map, $map-name) {
   $prev-key: null;
   $prev-num: null;
@@ -20,8 +19,7 @@
   }
 }
 
-// Starts at zero
-// Used to ensure the min-width of the lowest breakpoint starts at 0.
+// "Starts at zero" is used to ensure the `min-width` of the lowest breakpoint starts at `0`
 @mixin _assert-starts-at-zero($map, $map-name: "$grid-breakpoints") {
   $values: map-values($map);
   $first-value: nth($values, 1);
@@ -30,10 +28,8 @@
   }
 }
 
-// Replace `$search` with `$replace` in `$string`
-// Used on our SVG icon backgrounds for custom forms.
+// "Replace `$search` with `$replace` in `$string`" is used on our SVG icon backgrounds for custom forms
 
-// @author Hugo Giraudel
 // @param {String} $string - Initial string
 // @param {String} $search - Substring to replace
 // @param {String} $replace ('') - New value

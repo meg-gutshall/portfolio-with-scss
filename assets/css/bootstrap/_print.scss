@@ -49,7 +49,7 @@
     }
     pre,
     blockquote {
-      border: $border-width solid $gray-500; // Bootstrap custom code; using `$border-width` instead of 1px
+      border: $border-width solid $gray-500; // Bootstrap custom code; using `$border-width` instead of `1px`
       page-break-inside: avoid;
     }
 
@@ -90,7 +90,7 @@
       min-width: $print-body-min-width !important;
     }
 
-    // Bootstrap components
+    // Bootstrap Components
     
     .navbar {
       display: none;

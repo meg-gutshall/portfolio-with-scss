@@ -1,6 +1,6 @@
 // stylelint-disable selector-no-qualifying-type
 
-// Base styles
+// Button
 
 .btn {
   display: inline-block;
@@ -26,7 +26,7 @@
     box-shadow: $btn-focus-box-shadow;
   }
 
-  // Disabled comes first so active can properly restyle
+  // `:disabled` comes first so `:active` can properly restyle
   &.disabled,
   &:disabled {
     opacity: $btn-disabled-opacity;
@@ -49,9 +49,7 @@ fieldset:disabled a.btn {
   pointer-events: none;
 }
 
-
-// Alternate buttons
-
+// Alternate button
 @each $color, $value in $theme-colors {
   .btn-#{$color} {
     @include button-variant($value, $value);
@@ -64,8 +62,7 @@ fieldset:disabled a.btn {
   }
 }
 
-
-// Link buttons
+// Link Button
 
 // Make a button look and behave like a link
 .btn-link {
@@ -93,8 +90,7 @@ fieldset:disabled a.btn {
   // No need for an active state here
 }
 
-
-// Button Sizes
+// Button Size
 
 .btn-lg {
   @include button-size($btn-padding-y-lg, $btn-padding-x-lg, $btn-font-size-lg, $btn-line-height-lg, $btn-border-radius-lg);
@@ -104,8 +100,7 @@ fieldset:disabled a.btn {
   @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $btn-font-size-sm, $btn-line-height-sm, $btn-border-radius-sm);
 }
 
-
-// Block button
+// Block Button
 
 .btn-block {
   display: block;

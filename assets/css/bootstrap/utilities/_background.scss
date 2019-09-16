@@ -1,5 +1,7 @@
 // stylelint-disable declaration-no-important
 
+// Contextual Background
+
 @each $color, $value in $theme-colors {
   @include bg-variant(".bg-#{$color}", $value);
 }
