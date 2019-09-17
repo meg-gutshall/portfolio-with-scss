@@ -1,17 +1,25 @@
-<div class="social">
+<div class="row social">
   {% if site.github %}
-    <a href="http://github.com/{{ site.github }}"><i class="fab fa-github-square"></i></a>
+    <div class="col-auto">
+      <a href="http://github.com/{{ site.github }}"><i class="fab fa-github-square"></i></a>
+    </div>
   {% endif %}
 
   {% if site.email %}
-    <a href="mailto:{{ site.email}}"><i class="fas fa-envelope-square"></i></a>
+    <div class="col-auto">
+      <a href="mailto:{{ site.email}}"><i class="fas fa-envelope-square"></i></a>
+    </div>
   {% endif %}
 
   {% if site.twitter %}
-    <a href="http://twitter.com/{{ site.twitter }}"><i class="fab fa-twitter-square"></i></a>
+    <div class="col-auto">
+      <a href="http://twitter.com/{{ site.twitter }}"><i class="fab fa-twitter-square"></i></a>
+    </div>
   {% endif %}
 
   {% if site.linkedin %}
-    <a href="http://linkedin.com/in/{{ site.linkedin }}"><i class="fab fa-linkedin"></i></a>
+    <div class="col-auto">
+      <a href="http://linkedin.com/in/{{ site.linkedin }}"><i class="fab fa-linkedin"></i></a>
+    </div>
   {% endif %}
 </div>
