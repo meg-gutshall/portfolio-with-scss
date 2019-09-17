@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body>
+    <div id="stikky-wrap">
+
+      {%- include header.html -%}
+
+      <div class="py-3">
+        <div class="container-fluid page-content">
+            {{ content }}
+        </div>
+      </div>
+
+    </div>
+    
+    {%- include footer.html -%}
+
+  </body>
+
+</html>
