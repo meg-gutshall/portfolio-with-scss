@@ -1,12 +1,51 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="en">
 
-  {%- include head.html -%}
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Meg Gutshall">
+    <meta name="description" content="Thoughts from the wild experience of learning to program">
+    <!-- <link rel="favicon" href="/assets/images/favicon.ico"> -->
+  
+    <!-- Custom metadata -->
+    <meta name="format-detection" content="telephone=no"> <!-- Prevent iOS from telephone number auto-detect for all numbers -->
+  
+    <title>Feral Code Philly</title>
+  
+    <!-- Custom styling -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.scss" />
+    
+    <!-- FontAwesome styling -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/font-awesome/css/all.css" />
+    
+    <!-- Bootstrap JavaScript -->
+    <script src="/assets/js/bootstrap/jquery.min.js"></script>
+    <script src="/assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+  
+    <!-- FontAwesome JavaScript -->
+    <script src="/assets/js/font-awesome/js/all.js"></script>
+  
+  </head>
 
   <body>
     <div id="stikky-wrap">
 
-      {%- include header.html -%}
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="/"><i class="fas fa-home"></i></a>
+          </div>
+          <div id="navbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="blog.html">BLOG</a></li>
+              <li><a href="projects.html">PROJECTS</a></li>
+              <li><a href="http://jekyller.github.io/vitae">RESUME</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
       <div class="py-3">
         <div class="container-fluid page-content">
@@ -16,7 +55,33 @@
 
     </div>
     
-    {%- include footer.html -%}
+    <footer>
+      <div class="container-fluid" id="footer">
+        <div class="row">
+          <div class="col">
+            <h1>Feral Code Philly</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <h2>Meg Gutshall</h2>
+          </div>
+          <div class="col-6">
+            <p>
+              <a href="mailto:meghan.gutshall@gmail.com">meghan.gutshall@gmail.com</a>
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p class="text-muted">
+              © All rights reserved. Powered by <a href="http://jekyllrb.com/">Jekyll</a>, <a href="http://www.github.com/jekyller/sustain">sustain</a>, and <a href="https://nicolas-van.github.io/bootstrap-4-github-pages/">Bootstrap 4 Github Pages</a> with ♥
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="footer"></div>
 
   </body>
 
