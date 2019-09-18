@@ -311,7 +311,15 @@ legend {
   }
 }
 
-// Progress bars ===============================================================
+// Pagination ===============================================================
+
+.page-link {
+  line-height: $pagination-line-height;
+  font-family: $headings-font-family;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: $bold;
+}
 
 // Containers ==================================================================
 

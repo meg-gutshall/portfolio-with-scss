@@ -303,45 +303,6 @@ div.footer{
 }
 
 
-/* Pagers */
-.pager {
-  margin: 2rem 0 0;
-}
-.pager li > a,
-.pager li > span {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-size: 1.4rem;
-  font-weight: 800;
-  letter-spacing: 1px;
-  padding: 1rem 0.5rem;
-  background-color: white;
-  border-radius: 0;
-}
-
-@media (min-width: 768px) {
-  .pager li > a,
-  .pager li > span {
-    font-size: 1.4rem;
-    padding: 1.5rem 2.5rem;
-  }
-}
-.pager li > a:hover,
-.pager li > a:focus {
-  color: white;
-  background-color: #006080;
-  border: 1px solid #006080;
-}
-.pager .disabled > a,
-.pager .disabled > a:hover,
-.pager .disabled > a:focus,
-.pager .disabled > span {
-  color: #808080;
-  background-color: #550055;
-  cursor: not-allowed;
-}
-
-
 /* Captions */
 .caption {
   text-align: center;

@@ -91,19 +91,19 @@ $navbar-light-disabled-color:       rgba($black,.1) !default;
 
 // Pagination
 
-$pagination-color:                  $white !default;
-$pagination-bg:                     $primary !default;
-$pagination-border-color:           $primary !default;
+$pagination-color:                  $pink !default;
+$pagination-bg:                     $white !default;
+$pagination-border-color:           $white !default;
 
 $pagination-hover-color:            $white !default;
-$pagination-hover-bg:               $secondary !default;
+$pagination-hover-bg:               $blue !default;
 $pagination-hover-border-color:     $pagination-hover-bg !default;
 
-$pagination-active-bg:              $secondary !default;
+$pagination-active-bg:              $white !default;
 $pagination-active-border-color:    $pagination-active-bg !default;
 
-$pagination-disabled-color:         $white !default;
-$pagination-disabled-bg:            #CCE8E0 !default;
+$pagination-disabled-color:         $gray-600 !default;
+$pagination-disabled-bg:            $purple !default;
 $pagination-disabled-border-color:  $pagination-disabled-bg !default;
 
 // Breadcrumbs
