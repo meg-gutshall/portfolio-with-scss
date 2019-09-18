@@ -67,8 +67,15 @@ $border-radius-sm:            .3rem !default;
 
 // Fonts
 
-$headings-font-family:        "Montserrat", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
-$headings-color:              $gray-700 !default;
+$body-font-family:        "Source Sans Pro", "Lora", Arial, sans-serif !default;
+$headings-font-family:    "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$meta-font-family:        "Lora", "Times New Roman", Arial, serif;
+
+$light:                   300 !default;
+$regular:                 400 !default;
+$semi-bold:               600 !default;
+$bold:                    700 !default;
+$boldest:                 900 !default;
 
 // Tables
 

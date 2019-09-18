@@ -21,7 +21,7 @@ body {
 }
 body {
   font-size: 1.6rem;
-  font-family: 'Source Sans Pro', 'Lora', sans-serif;
+  font-family: $body-font-family;
   color: #360036;
   /* color: #404040; */
   -webkit-tap-highlight-color: #006080;
@@ -72,8 +72,8 @@ p {
   text-align: center;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: normal;
+  font-family: $headings-font-family;
+  font-weight: $regular;
   line-height: 1rem;
 }
 h1.about {
@@ -140,7 +140,7 @@ hr.small {
   display: inline;
   padding: .2em .6em .3em;
   font-size: 85%;
-  font-weight: bold;
+  font-weight: $bold;
   line-height: 1;
   color: #fff;
   text-align: center;
@@ -175,7 +175,7 @@ div.footer{
 .section-heading {
   font-size: 3.6rem;
   margin-top: 6rem;
-  font-weight: 700;
+  font-weight: $bold;
 }
 
 
@@ -205,8 +205,8 @@ div.footer{
   font-size: 2.4rem;
   line-height: 1.1rem;
   display: block;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 300;
+  font-family: $headings-font-family;
+  font-weight: $light;
   margin: 1rem 0 0;
   color: white;
   text-shadow: 1px 1px 5px #360036, 2px 2px 5px #550055;
@@ -226,15 +226,15 @@ div.footer{
   text-shadow: 1px 1px 5px #360036, 2px 2px 5px #550055;
 }
 .intro-header .post-heading .subheading {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: $headings-font-family;
   font-size: 2.4rem;
   margin: 1rem 0 3rem;
-  font-weight: 600;
+  font-weight: $semi-bold;
 }
 .intro-header .post-heading .meta {
-  font-family: 'Lora', 'Times New Roman', serif;
+  font-family: $meta-font-family;
   font-style: italic;
-  font-weight: 300;
+  font-weight: $light;
   font-size: 2rem;
 }
 .intro-header .post-heading .meta a {
@@ -278,7 +278,7 @@ div.footer{
 }
 .post-preview > a > .post-subtitle {
   margin: 0;
-  font-weight: 300;
+  font-weight: $light;
   margin-bottom: 1rem;
 }
 .post-preview > .post-meta {
@@ -369,10 +369,10 @@ form .row:first-child .floating-label-form-group {
 
 /* Buttons */
 .btn {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: $headings-font-family;
   text-transform: uppercase;
   font-size: 1.4rem;
-  font-weight: 800;
+  font-weight: $bold;
   letter-spacing: 1px;
   border-radius: 0;
   padding: 1.5rem 2.5rem;
@@ -419,15 +419,15 @@ img::-moz-selection {
   left: 0;
   width: 100%;
   z-index: 3;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: $headings-font-family;
 }
 .navbar-custom .navbar-brand {
-  font-weight: 800;
+  font-weight: $bold;
 }
 .navbar-custom .nav li a {
   text-transform: uppercase;
   font-size: 1.2rem;
-  font-weight: 800;
+  font-weight: $bold;
   letter-spacing: 1px;
 }
 .navbar-static-top {
@@ -599,18 +599,18 @@ section#coming-soon div.summary p {
   color: #fff;
   font-size: 2.4rem;
   line-height: 3.3rem;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 600;
+  font-family: $body-font-family;
+  font-weight: $semi-bold;
   padding-top: 2rem;
 }
 section#coming-soon div.summary p a {
   color: #008080;
-  font-weight: 700;
+  font-weight: $bold;
   text-decoration: none;
 }
 section#coming-soon div.summary p a:hover {
   color: #A40080;
-  font-weight: 700;
+  font-weight: $bold;
   text-decoration: none;
 }
 section#coming-soon div.summary p.about-intro {
