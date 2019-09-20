@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900');
-
 // # Only the main Sass file needs front matter (the dashes are enough)
 
 @import "variables";
@@ -20,8 +18,6 @@ body {
   margin: 0;
 }
 body {
-  font-size: 1.6rem;
-  font-family: $body-font-family;
   -webkit-tap-highlight-color: $blue;
   /* The html and body elements cannot have any padding or margin. */
   border-top: 5px solid $pink;
@@ -49,7 +45,6 @@ body {
 
 /* Typography */
 p {
-  line-height: 2.2rem;
   margin: 2.6rem 0;
 }
 .pink {
@@ -69,11 +64,6 @@ p {
   font-weight: $bold;
   text-align: center;
 }
-h1, h2, h3, h4, h5, h6 {
-  font-family: $headings-font-family;
-  font-weight: $regular;
-  line-height: 1rem;
-}
 h1.about {
   color: $purple;
 }
@@ -82,13 +72,7 @@ code {
   background-color: #EDF7F8; 
 }
 a {
-  color: $pink;
   font-weight: $bold;
-}
-a:hover,
-a:focus {
-  color: $teal;
-  text-decoration: none;
 }
 a img:hover,
 a img:focus {
@@ -155,7 +139,7 @@ hr.small {
   text-decoration: none !important;
   padding: 5rem 0 6.5rem;
 }
-.text-muted {
+.text-muted {   // This turned into a variable, not a class
 	color: #3fa9a9;
 }
 div.footer{
@@ -366,19 +350,10 @@ form .row:first-child .floating-label-form-group {
 
 /* Buttons */
 .btn {
-  font-family: $headings-font-family;
   text-transform: uppercase;
-  font-size: 1.4rem;
-  font-weight: $bold;
   letter-spacing: 1px;
-  border-radius: 0;
-  padding: 1.5rem 2.5rem;
   background-color: $pink;
   border: none;
-}
-.btn-lg {
-  font-size: 1.6rem;
-  padding: 2.5rem 3.5rem;
 }
 .btn-default:hover,
 .btn-default:focus {
